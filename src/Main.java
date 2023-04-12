@@ -1,17 +1,25 @@
+import java.util.Arrays;
+import java.util.Collections;
+
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        Integer a[]={44,66,99,77,33,22,55};
+        int smallest=a[0];
+        int largest=a[0];
+        for(int i=1; i<a.length;i++){
+            if (a[i]>largest){
+                largest=a[i];
+            }else if (a[i]<smallest){
+                smallest=a[i];
+            }
         }
+        //int n=a.length;
+        //Arrays.sort(a);
+        System.out.println("Smallest no is: "+smallest);
+        //int b[]={44,66,99,77,33,22,55};
+        //Arrays.sort(a, Collections.reverseOrder());
+        System.out.println("Largest no is: "+largest);
     }
 }
